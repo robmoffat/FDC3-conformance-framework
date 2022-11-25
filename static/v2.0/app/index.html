@@ -1,0 +1,25 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>FDC3 Conformance Tests</title>
+  <link rel="stylesheet" href="../lib/index.css" />
+</head>
+
+<body>
+  <div id="mocha"></div>
+  <div class="center" id="version-selector">
+    <label for="version">Test suite:</label>
+    <select id="version"></select>
+    <input id="runButton" value="Run" type="button" />
+  </div>
+  <p id="context"></p>
+  <script src="../../lib/fdc3-compliance-v2.0.js"></script>
+  <script>
+    // no idea why but this doesn't seem to work when added in the above script.
+    sourceMapSupport.install();
+  </script>
+  <!-- optional 2.0 app scripts -->
+</body>
+
+</html>
